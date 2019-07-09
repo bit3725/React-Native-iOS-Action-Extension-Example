@@ -16,6 +16,10 @@
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* RNActionExtensionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* RNActionExtensionTests.m */; };
+		562E966C22D4863B002CE3A1 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 562E966B22D4863B002CE3A1 /* Media.xcassets */; };
+		562E966F22D4863B002CE3A1 /* ActionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 562E966E22D4863B002CE3A1 /* ActionViewController.m */; };
+		562E967222D4863B002CE3A1 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 562E967022D4863B002CE3A1 /* MainInterface.storyboard */; };
+		562E967622D4863B002CE3A1 /* ActionExt.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 562E966922D4863B002CE3A1 /* ActionExt.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		5A5A8F4260A31DD50B6A4CE0 /* libPods-RNActionExtensionTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BF9ED070280A43D388C593A /* libPods-RNActionExtensionTests.a */; };
 		7267AD3C27E35E70AC87FF33 /* libPods-RNActionExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58E204116069D4A09680380A /* libPods-RNActionExtension.a */; };
 		779CE712F578AEE5D634CF0D /* libPods-RNActionExtension-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F4FED3B275E65A7CA8FB61CC /* libPods-RNActionExtension-tvOS.a */; };
@@ -37,7 +41,28 @@
 			remoteGlobalIDString = 2D02E47A1E0B4A5D006451C7;
 			remoteInfo = "RNActionExtension-tvOS";
 		};
+		562E967422D4863B002CE3A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 562E966822D4863B002CE3A1;
+			remoteInfo = ActionExt;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		562E967A22D4863C002CE3A1 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				562E967622D4863B002CE3A1 /* ActionExt.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
@@ -56,6 +81,12 @@
 		2D02E4901E0B4A5D006451C7 /* RNActionExtension-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RNActionExtension-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A0FA49047FD2BC670C4A99A /* Pods-RNActionExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNActionExtension.release.xcconfig"; path = "Target Support Files/Pods-RNActionExtension/Pods-RNActionExtension.release.xcconfig"; sourceTree = "<group>"; };
 		3BF9ED070280A43D388C593A /* libPods-RNActionExtensionTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNActionExtensionTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		562E966922D4863B002CE3A1 /* ActionExt.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ActionExt.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		562E966B22D4863B002CE3A1 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		562E966D22D4863B002CE3A1 /* ActionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActionViewController.h; sourceTree = "<group>"; };
+		562E966E22D4863B002CE3A1 /* ActionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ActionViewController.m; sourceTree = "<group>"; };
+		562E967122D4863B002CE3A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		562E967322D4863B002CE3A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		58E204116069D4A09680380A /* libPods-RNActionExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNActionExtension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		63274D98728E7475507B8015 /* Pods-RNActionExtensionTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNActionExtensionTests.release.xcconfig"; path = "Target Support Files/Pods-RNActionExtensionTests/Pods-RNActionExtensionTests.release.xcconfig"; sourceTree = "<group>"; };
 		6AEDD4DC90CEAB4EBF100F89 /* Pods-RNActionExtension-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNActionExtension-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-RNActionExtension-tvOSTests/Pods-RNActionExtension-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -99,6 +130,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFC77AAC0634EDFD3A0AD03E /* libPods-RNActionExtension-tvOSTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		562E966622D4863B002CE3A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,7 +186,6 @@
 				870946EFF1E887162278A294 /* Pods-RNActionExtensionTests.debug.xcconfig */,
 				63274D98728E7475507B8015 /* Pods-RNActionExtensionTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -165,6 +202,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		562E966A22D4863B002CE3A1 /* ActionExt */ = {
+			isa = PBXGroup;
+			children = (
+				562E966B22D4863B002CE3A1 /* Media.xcassets */,
+				562E966D22D4863B002CE3A1 /* ActionViewController.h */,
+				562E966E22D4863B002CE3A1 /* ActionViewController.m */,
+				562E967022D4863B002CE3A1 /* MainInterface.storyboard */,
+				562E967322D4863B002CE3A1 /* Info.plist */,
+			);
+			path = ActionExt;
+			sourceTree = "<group>";
+		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
@@ -178,6 +227,7 @@
 				13B07FAE1A68108700A75B9A /* RNActionExtension */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* RNActionExtensionTests */,
+				562E966A22D4863B002CE3A1 /* ActionExt */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				2736B68EEC3CBC28EFAE1B17 /* Pods */,
@@ -194,6 +244,7 @@
 				00E356EE1AD99517003FC87E /* RNActionExtensionTests.xctest */,
 				2D02E47B1E0B4A5D006451C7 /* RNActionExtension-tvOS.app */,
 				2D02E4901E0B4A5D006451C7 /* RNActionExtension-tvOSTests.xctest */,
+				562E966922D4863B002CE3A1 /* ActionExt.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -230,10 +281,12 @@
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				562E967A22D4863C002CE3A1 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				562E967522D4863B002CE3A1 /* PBXTargetDependency */,
 			);
 			name = RNActionExtension;
 			productName = RNActionExtension;
@@ -279,6 +332,23 @@
 			productReference = 2D02E4901E0B4A5D006451C7 /* RNActionExtension-tvOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		562E966822D4863B002CE3A1 /* ActionExt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 562E967922D4863C002CE3A1 /* Build configuration list for PBXNativeTarget "ActionExt" */;
+			buildPhases = (
+				562E966522D4863B002CE3A1 /* Sources */,
+				562E966622D4863B002CE3A1 /* Frameworks */,
+				562E966722D4863B002CE3A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ActionExt;
+			productName = ActionExt;
+			productReference = 562E966922D4863B002CE3A1 /* ActionExt.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -301,6 +371,10 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 2D02E47A1E0B4A5D006451C7;
 					};
+					562E966822D4863B002CE3A1 = {
+						CreatedOnToolsVersion = 10.2.1;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "RNActionExtension" */;
@@ -308,6 +382,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -320,6 +395,7 @@
 				00E356ED1AD99517003FC87E /* RNActionExtensionTests */,
 				2D02E47A1E0B4A5D006451C7 /* RNActionExtension-tvOS */,
 				2D02E48F1E0B4A5D006451C7 /* RNActionExtension-tvOSTests */,
+				562E966822D4863B002CE3A1 /* ActionExt */,
 			);
 		};
 /* End PBXProject section */
@@ -353,6 +429,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		562E966722D4863B002CE3A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				562E966C22D4863B002CE3A1 /* Media.xcassets in Resources */,
+				562E967222D4863B002CE3A1 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -550,6 +635,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		562E966522D4863B002CE3A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				562E966F22D4863B002CE3A1 /* ActionViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -563,6 +656,11 @@
 			target = 2D02E47A1E0B4A5D006451C7 /* RNActionExtension-tvOS */;
 			targetProxy = 2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */;
 		};
+		562E967522D4863B002CE3A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 562E966822D4863B002CE3A1 /* ActionExt */;
+			targetProxy = 562E967422D4863B002CE3A1 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -573,6 +671,14 @@
 			);
 			name = LaunchScreen.xib;
 			path = RNActionExtension;
+			sourceTree = "<group>";
+		};
+		562E967022D4863B002CE3A1 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				562E967122D4863B002CE3A1 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -626,6 +732,7 @@
 			baseConfigurationReference = 73A7A26B86A58C22AA44AB90 /* Pods-RNActionExtension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
 				INFOPLIST_FILE = RNActionExtension/Info.plist;
@@ -646,6 +753,7 @@
 			baseConfigurationReference = 3A0FA49047FD2BC670C4A99A /* Pods-RNActionExtension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = RNActionExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -767,6 +875,56 @@
 				SDKROOT = appletvos;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RNActionExtension-tvOS.app/RNActionExtension-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
+			};
+			name = Release;
+		};
+		562E967722D4863C002CE3A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = ActionExt/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.RNActionExtension.ActionExt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		562E967822D4863C002CE3A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = ActionExt/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.RNActionExtension.ActionExt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -904,6 +1062,15 @@
 			buildConfigurations = (
 				2D02E4991E0B4A5E006451C7 /* Debug */,
 				2D02E49A1E0B4A5E006451C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		562E967922D4863C002CE3A1 /* Build configuration list for PBXNativeTarget "ActionExt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				562E967722D4863C002CE3A1 /* Debug */,
+				562E967822D4863C002CE3A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
