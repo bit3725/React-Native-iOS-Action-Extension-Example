@@ -11,7 +11,16 @@
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
 
+ActionViewController * actionViewController = nil;
+
 @implementation ActionViewController
+
+RCT_EXPORT_MODULE(ActionExtension);
+
+RCT_EXPORT_METHOD(done) {
+  [actionViewController.extensionContext completeRequestReturningItems:self.extensionContext.inputItems completionHandler:nil];
+  actionViewController = nil;
+}
   
 - (void)loadView {
   NSURL *jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"extension" fallbackResource:nil];
@@ -22,6 +31,11 @@
                                                    launchOptions:nil];
   rootView.backgroundColor = [[UIColor alloc] initWithRed:1.0f green:1.0f blue:1.0f alpha:1];
   self.view = rootView;
+  actionViewController= self;
+}
+
++ (BOOL)requiresMainQueueSetup {
+  return YES;
 }
 
 @end
