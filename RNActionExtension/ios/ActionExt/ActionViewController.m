@@ -11,7 +11,7 @@
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
 
-ActionViewController * actionViewController = nil;
+ActionViewController *actionViewController = nil;
 
 @implementation ActionViewController
 
@@ -20,6 +20,51 @@ RCT_EXPORT_MODULE(ActionExtension);
 RCT_EXPORT_METHOD(done) {
   [actionViewController.extensionContext completeRequestReturningItems:self.extensionContext.inputItems completionHandler:nil];
   actionViewController = nil;
+}
+
+RCT_REMAP_METHOD(getData,
+                 resolver:(RCTPromiseResolveBlock)resolve
+                 rejecter:(RCTPromiseRejectBlock)reject) {
+  NSExtensionContext *extensionContext = actionViewController.extensionContext;
+  NSExtensionItem *item = [extensionContext.inputItems firstObject];
+  NSArray *attachments = item.attachments;
+  NSItemProvider *itemProvider = [attachments firstObject];
+  if ([itemProvider hasItemConformingToTypeIdentifier:(NSString *)kUTTypeURL]) {
+    [itemProvider loadItemForTypeIdentifier:(NSString *)kUTTypeURL options:nil completionHandler:^(NSURL *url, NSError *error) {
+      if (error) {
+        reject(@"error", @"Load url failed", error);
+      } else {
+        resolve(@{
+                  @"type": @"URL",
+                  @"value": [url absoluteString]
+                  });
+      }
+    }];
+  } else if ([itemProvider hasItemConformingToTypeIdentifier:(NSString *)kUTTypeImage]) {
+    [itemProvider loadItemForTypeIdentifier:(NSString *)kUTTypeImage options:nil completionHandler:^(NSURL *imageUrl, NSError *error) {
+      if (error) {
+        reject(@"error", @"Load image failed", error);
+      } else {
+        resolve(@{
+                  @"type": @"IMAGE",
+                  @"value": [imageUrl absoluteString]
+                  });
+      }
+    }];
+  } else if ([itemProvider hasItemConformingToTypeIdentifier:(NSString *)kUTTypeText]) {
+    [itemProvider loadItemForTypeIdentifier:(NSString *)kUTTypeText options:nil completionHandler:^(NSString *text, NSError *error) {
+      if (error) {
+        reject(@"error", @"Load text failed", error);
+      } else {
+        resolve(@{
+                  @"type": @"TEXT",
+                  @"value": text
+                  });
+      }
+    }];
+  } else {
+    reject(@"error", @"Unsupported Type", nil);
+  }
 }
   
 - (void)loadView {
