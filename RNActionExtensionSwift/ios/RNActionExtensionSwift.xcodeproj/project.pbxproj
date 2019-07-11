@@ -18,6 +18,10 @@
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* RNActionExtensionSwiftTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* RNActionExtensionSwiftTests.m */; };
 		4BE6D4CB24E63967AB2709FB /* libPods-RNActionExtensionSwift-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 88A000A66360C45D3642A5E6 /* libPods-RNActionExtensionSwift-tvOS.a */; };
+		56A7745622D70B3F00E378BC /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56A7745522D70B3F00E378BC /* Media.xcassets */; };
+		56A7745822D70B3F00E378BC /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A7745722D70B3F00E378BC /* ActionViewController.swift */; };
+		56A7745B22D70B3F00E378BC /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56A7745922D70B3F00E378BC /* MainInterface.storyboard */; };
+		56A7745F22D70B3F00E378BC /* ActionExt.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 56A7745322D70B3F00E378BC /* ActionExt.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		8D4BCDB8F18AD6F70CC44BB8 /* libPods-RNActionExtensionSwift.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 150F217D0025A5ADCB2EB3E2 /* libPods-RNActionExtensionSwift.a */; };
 		CC252023219BBA0BFBFB4E38 /* libPods-RNActionExtensionSwift-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF0022F5379683604EC3AAB1 /* libPods-RNActionExtensionSwift-tvOSTests.a */; };
 /* End PBXBuildFile section */
@@ -37,7 +41,28 @@
 			remoteGlobalIDString = 2D02E47A1E0B4A5D006451C7;
 			remoteInfo = "RNActionExtensionSwift-tvOS";
 		};
+		56A7745D22D70B3F00E378BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 56A7745222D70B3F00E378BC;
+			remoteInfo = ActionExt;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		56A7746322D70B3F00E378BC /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				56A7745F22D70B3F00E378BC /* ActionExt.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
@@ -60,6 +85,11 @@
 		48A9D927C34955A734286BEF /* Pods-RNActionExtensionSwift-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNActionExtensionSwift-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-RNActionExtensionSwift-tvOSTests/Pods-RNActionExtensionSwift-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4FAA809AC97483A16E968CFC /* libPods-RNActionExtensionSwiftTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNActionExtensionSwiftTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		549AE9280DE2825F7003EE32 /* Pods-RNActionExtensionSwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNActionExtensionSwiftTests.release.xcconfig"; path = "Target Support Files/Pods-RNActionExtensionSwiftTests/Pods-RNActionExtensionSwiftTests.release.xcconfig"; sourceTree = "<group>"; };
+		56A7745322D70B3F00E378BC /* ActionExt.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ActionExt.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		56A7745522D70B3F00E378BC /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		56A7745722D70B3F00E378BC /* ActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionViewController.swift; sourceTree = "<group>"; };
+		56A7745A22D70B3F00E378BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		56A7745C22D70B3F00E378BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88A000A66360C45D3642A5E6 /* libPods-RNActionExtensionSwift-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNActionExtensionSwift-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6F9EC050FC700AAFAA5C552 /* Pods-RNActionExtensionSwift-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNActionExtensionSwift-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-RNActionExtensionSwift-tvOS/Pods-RNActionExtensionSwift-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		BF0022F5379683604EC3AAB1 /* libPods-RNActionExtensionSwift-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNActionExtensionSwift-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -102,6 +132,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		56A7745022D70B3F00E378BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -134,7 +171,6 @@
 				0907491CF71A076BB5627612 /* Pods-RNActionExtensionSwiftTests.debug.xcconfig */,
 				549AE9280DE2825F7003EE32 /* Pods-RNActionExtensionSwiftTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -165,6 +201,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		56A7745422D70B3F00E378BC /* ActionExt */ = {
+			isa = PBXGroup;
+			children = (
+				56A7745522D70B3F00E378BC /* Media.xcassets */,
+				56A7745722D70B3F00E378BC /* ActionViewController.swift */,
+				56A7745922D70B3F00E378BC /* MainInterface.storyboard */,
+				56A7745C22D70B3F00E378BC /* Info.plist */,
+			);
+			path = ActionExt;
+			sourceTree = "<group>";
+		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
@@ -178,6 +225,7 @@
 				13B07FAE1A68108700A75B9A /* RNActionExtensionSwift */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* RNActionExtensionSwiftTests */,
+				56A7745422D70B3F00E378BC /* ActionExt */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				03F661AE6498DF1F8D00996A /* Pods */,
@@ -194,6 +242,7 @@
 				00E356EE1AD99517003FC87E /* RNActionExtensionSwiftTests.xctest */,
 				2D02E47B1E0B4A5D006451C7 /* RNActionExtensionSwift-tvOS.app */,
 				2D02E4901E0B4A5D006451C7 /* RNActionExtensionSwift-tvOSTests.xctest */,
+				56A7745322D70B3F00E378BC /* ActionExt.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -230,10 +279,12 @@
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				56A7746322D70B3F00E378BC /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				56A7745E22D70B3F00E378BC /* PBXTargetDependency */,
 			);
 			name = RNActionExtensionSwift;
 			productName = RNActionExtensionSwift;
@@ -279,12 +330,30 @@
 			productReference = 2D02E4901E0B4A5D006451C7 /* RNActionExtensionSwift-tvOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		56A7745222D70B3F00E378BC /* ActionExt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56A7746222D70B3F00E378BC /* Build configuration list for PBXNativeTarget "ActionExt" */;
+			buildPhases = (
+				56A7744F22D70B3F00E378BC /* Sources */,
+				56A7745022D70B3F00E378BC /* Frameworks */,
+				56A7745122D70B3F00E378BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ActionExt;
+			productName = ActionExt;
+			productReference = 56A7745322D70B3F00E378BC /* ActionExt.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = Facebook;
 				TargetAttributes = {
@@ -301,6 +370,10 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 2D02E47A1E0B4A5D006451C7;
 					};
+					56A7745222D70B3F00E378BC = {
+						CreatedOnToolsVersion = 10.2.1;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "RNActionExtensionSwift" */;
@@ -308,6 +381,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -320,6 +394,7 @@
 				00E356ED1AD99517003FC87E /* RNActionExtensionSwiftTests */,
 				2D02E47A1E0B4A5D006451C7 /* RNActionExtensionSwift-tvOS */,
 				2D02E48F1E0B4A5D006451C7 /* RNActionExtensionSwift-tvOSTests */,
+				56A7745222D70B3F00E378BC /* ActionExt */,
 			);
 		};
 /* End PBXProject section */
@@ -353,6 +428,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56A7745122D70B3F00E378BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56A7745622D70B3F00E378BC /* Media.xcassets in Resources */,
+				56A7745B22D70B3F00E378BC /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -550,6 +634,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		56A7744F22D70B3F00E378BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56A7745822D70B3F00E378BC /* ActionViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -563,6 +655,11 @@
 			target = 2D02E47A1E0B4A5D006451C7 /* RNActionExtensionSwift-tvOS */;
 			targetProxy = 2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */;
 		};
+		56A7745E22D70B3F00E378BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 56A7745222D70B3F00E378BC /* ActionExt */;
+			targetProxy = 56A7745D22D70B3F00E378BC /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -573,6 +670,14 @@
 			);
 			name = LaunchScreen.xib;
 			path = RNActionExtensionSwift;
+			sourceTree = "<group>";
+		};
+		56A7745922D70B3F00E378BC /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				56A7745A22D70B3F00E378BC /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -625,7 +730,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 09016DBC965B5CEF3D96ACD6 /* Pods-RNActionExtensionSwift.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
 				INFOPLIST_FILE = RNActionExtensionSwift/Info.plist;
@@ -645,7 +752,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CCB2A5B4BD1AF7449CCFA9A1 /* Pods-RNActionExtensionSwift.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = RNActionExtensionSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -767,6 +876,61 @@
 				SDKROOT = appletvos;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RNActionExtensionSwift-tvOS.app/RNActionExtensionSwift-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
+			};
+			name = Release;
+		};
+		56A7746022D70B3F00E378BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = ActionExt/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.RNActionExtensionSwift.ActionExt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		56A7746122D70B3F00E378BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = ActionExt/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.RNActionExtensionSwift.ActionExt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -904,6 +1068,15 @@
 			buildConfigurations = (
 				2D02E4991E0B4A5E006451C7 /* Debug */,
 				2D02E49A1E0B4A5E006451C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56A7746222D70B3F00E378BC /* Build configuration list for PBXNativeTarget "ActionExt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56A7746022D70B3F00E378BC /* Debug */,
+				56A7746122D70B3F00E378BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
