@@ -22,6 +22,7 @@
 		56A7745822D70B3F00E378BC /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A7745722D70B3F00E378BC /* ActionViewController.swift */; };
 		56A7745B22D70B3F00E378BC /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56A7745922D70B3F00E378BC /* MainInterface.storyboard */; };
 		56A7745F22D70B3F00E378BC /* ActionExt.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 56A7745322D70B3F00E378BC /* ActionExt.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		802FB9A451D85D72B852A83C /* libPods-RNActionExtensionSwift-ActionExt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 97E94A78542E7B7A37BCD6E3 /* libPods-RNActionExtensionSwift-ActionExt.a */; };
 		8D4BCDB8F18AD6F70CC44BB8 /* libPods-RNActionExtensionSwift.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 150F217D0025A5ADCB2EB3E2 /* libPods-RNActionExtensionSwift.a */; };
 		CC252023219BBA0BFBFB4E38 /* libPods-RNActionExtensionSwift-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF0022F5379683604EC3AAB1 /* libPods-RNActionExtensionSwift-tvOSTests.a */; };
 /* End PBXBuildFile section */
@@ -82,6 +83,7 @@
 		2D02E47B1E0B4A5D006451C7 /* RNActionExtensionSwift-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RNActionExtensionSwift-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* RNActionExtensionSwift-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RNActionExtensionSwift-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		39EBBF9E2CE68934E8F93DF7 /* Pods-RNActionExtensionSwift-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNActionExtensionSwift-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-RNActionExtensionSwift-tvOSTests/Pods-RNActionExtensionSwift-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		3C8B234F95D2E98704B7EDD1 /* Pods-RNActionExtensionSwift-ActionExt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNActionExtensionSwift-ActionExt.release.xcconfig"; path = "Target Support Files/Pods-RNActionExtensionSwift-ActionExt/Pods-RNActionExtensionSwift-ActionExt.release.xcconfig"; sourceTree = "<group>"; };
 		48A9D927C34955A734286BEF /* Pods-RNActionExtensionSwift-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNActionExtensionSwift-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-RNActionExtensionSwift-tvOSTests/Pods-RNActionExtensionSwift-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4FAA809AC97483A16E968CFC /* libPods-RNActionExtensionSwiftTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNActionExtensionSwiftTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		549AE9280DE2825F7003EE32 /* Pods-RNActionExtensionSwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNActionExtensionSwiftTests.release.xcconfig"; path = "Target Support Files/Pods-RNActionExtensionSwiftTests/Pods-RNActionExtensionSwiftTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -91,7 +93,9 @@
 		56A7745A22D70B3F00E378BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		56A7745C22D70B3F00E378BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56D53AF022D70C41004F52F3 /* ActionExt-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ActionExt-Bridging-Header.h"; sourceTree = "<group>"; };
+		6EB3543E54ED0589062BECC1 /* Pods-RNActionExtensionSwift-ActionExt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNActionExtensionSwift-ActionExt.debug.xcconfig"; path = "Target Support Files/Pods-RNActionExtensionSwift-ActionExt/Pods-RNActionExtensionSwift-ActionExt.debug.xcconfig"; sourceTree = "<group>"; };
 		88A000A66360C45D3642A5E6 /* libPods-RNActionExtensionSwift-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNActionExtensionSwift-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		97E94A78542E7B7A37BCD6E3 /* libPods-RNActionExtensionSwift-ActionExt.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNActionExtensionSwift-ActionExt.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6F9EC050FC700AAFAA5C552 /* Pods-RNActionExtensionSwift-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNActionExtensionSwift-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-RNActionExtensionSwift-tvOS/Pods-RNActionExtensionSwift-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		BF0022F5379683604EC3AAB1 /* libPods-RNActionExtensionSwift-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNActionExtensionSwift-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCB2A5B4BD1AF7449CCFA9A1 /* Pods-RNActionExtensionSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNActionExtensionSwift.release.xcconfig"; path = "Target Support Files/Pods-RNActionExtensionSwift/Pods-RNActionExtensionSwift.release.xcconfig"; sourceTree = "<group>"; };
@@ -137,6 +141,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				802FB9A451D85D72B852A83C /* libPods-RNActionExtensionSwift-ActionExt.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,6 +176,8 @@
 				39EBBF9E2CE68934E8F93DF7 /* Pods-RNActionExtensionSwift-tvOSTests.release.xcconfig */,
 				0907491CF71A076BB5627612 /* Pods-RNActionExtensionSwiftTests.debug.xcconfig */,
 				549AE9280DE2825F7003EE32 /* Pods-RNActionExtensionSwiftTests.release.xcconfig */,
+				6EB3543E54ED0589062BECC1 /* Pods-RNActionExtensionSwift-ActionExt.debug.xcconfig */,
+				3C8B234F95D2E98704B7EDD1 /* Pods-RNActionExtensionSwift-ActionExt.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -198,6 +205,7 @@
 				88A000A66360C45D3642A5E6 /* libPods-RNActionExtensionSwift-tvOS.a */,
 				BF0022F5379683604EC3AAB1 /* libPods-RNActionExtensionSwift-tvOSTests.a */,
 				4FAA809AC97483A16E968CFC /* libPods-RNActionExtensionSwiftTests.a */,
+				97E94A78542E7B7A37BCD6E3 /* libPods-RNActionExtensionSwift-ActionExt.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -336,6 +344,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 56A7746222D70B3F00E378BC /* Build configuration list for PBXNativeTarget "ActionExt" */;
 			buildPhases = (
+				F9F4ED7FA08CC7C6DC5CE879 /* [CP] Check Pods Manifest.lock */,
 				56A7744F22D70B3F00E378BC /* Sources */,
 				56A7745022D70B3F00E378BC /* Frameworks */,
 				56A7745122D70B3F00E378BC /* Resources */,
@@ -555,6 +564,28 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-RNActionExtensionSwift-tvOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9F4ED7FA08CC7C6DC5CE879 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RNActionExtensionSwift-ActionExt-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -883,6 +914,7 @@
 		};
 		56A7746022D70B3F00E378BC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EB3543E54ED0589062BECC1 /* Pods-RNActionExtensionSwift-ActionExt.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -912,6 +944,7 @@
 		};
 		56A7746122D70B3F00E378BC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C8B234F95D2E98704B7EDD1 /* Pods-RNActionExtensionSwift-ActionExt.release.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
