@@ -53,6 +53,8 @@ class ActionViewController: UIViewController {
     
     rootView = RCTRootView(bundleURL: jsCodeLocation, moduleName: "RNActionExtensionSwift", initialProperties: nil, launchOptions: nil)
     self.view = rootView;
+    
+    ActionExtension.viewController = self;
   }
 
 //    @IBAction func done() {
