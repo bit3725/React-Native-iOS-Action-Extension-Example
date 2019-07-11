@@ -12,4 +12,8 @@
 
 RCT_EXTERN_METHOD(done)
 
+RCT_EXTERN_METHOD(getData: (RCTPromiseResolveBlock)resolve
+                  rejecter: (RCTPromiseRejectBlock)reject
+                  )
+
 @end
